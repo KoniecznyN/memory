@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Memory</title>
+  </head>
+  <body>
+    <div id="topPanel">
+      <h1 id="h1">MEMORY GAME</h1>
+    </div>
+    <div id="bottomPanel">
+      <div id="usernameBox">
+        <label for="usernameInput">Podaj nazwę użytkownika: </label>
+        <input type="text" name="" id="usernameInput" />
+        <button id="submitButton" onclick=" toggle()">ZATWIERDŹ</button>
+      </div>
+      <div id="leftPanel">
+        <img
+          src="images/czolowa.png"
+          alt="main"
+          id="main"
+          usemap="#image-map"
+        />
+        <map name="image-map">
+          <area
+            target=""
+            alt=""
+            title=""
+            href="#"
+            coords="53,51,422,80,86,195"
+            shape="poly"
+            onclick="setPlaytime(30)"
+          />
+          <area
+            target=""
+            alt=""
+            title=""
+            href="#"
+            coords="105,280,429,139,460,300"
+            shape="poly"
+            onclick="setPlaytime(60)"
+          />
+          <area
+            target=""
+            alt=""
+            title=""
+            href="#"
+            coords="119,345,463,383,143,487"
+            shape="poly"
+            onclick="setPlaytime(90)"
+          />
+        </map>
+        <div id="timeBarOutline">
+          <div id="timeBarP"></div>
+          <div id="timeBar"></div>
+        </div>
+        <div id="cards">
+          <div id="tileRow">
+            <img
+              src="images/1.jpg"
+              alt="1"
+              id="memoryTile"
+              onclick="tile(1, arr)"
+            />
+            <img
+              src="images/1.jpg"
+              alt="1"
+              id="memoryTile"
+              onclick="tile(2, arr)"
+            />
+            <img
+              src="images/2.jpg"
+              alt="2"
+              id="memoryTile"
+              onclick="tile(3, arr)"
+            />
+            <img
+              src="images/2.jpg"
+              alt="2"
+              id="memoryTile"
+              onclick="tile(4, arr)"
+            />
+          </div>
+          <div id="tileRow">
+            <img
+              src="images/3.jpg"
+              alt="3"
+              id="memoryTile"
+              onclick="tile(5, arr)"
+            />
+            <img
+              src="images/3.jpg"
+              alt="3"
+              id="memoryTile"
+              onclick="tile(6, arr)"
+            />
+            <img
+              src="images/4.jpg"
+              alt="4"
+              id="memoryTile"
+              onclick="tile(7, arr)"
+            />
+            <img
+              src="images/4.jpg"
+              alt="4"
+              id="memoryTile"
+              onclick="tile(8, arr)"
+            />
+          </div>
+          <div id="tileRow">
+            <img
+              src="images/5.jpg"
+              alt="5"
+              id="memoryTile"
+              onclick="tile(9, arr)"
+            />
+            <img
+              src="images/5.jpg"
+              alt="5"
+              id="memoryTile"
+              onclick="tile(10, arr)"
+            />
+            <img
+              src="images/6.jpg"
+              alt="6"
+              id="memoryTile"
+              onclick="tile(11, arr)"
+            />
+            <img
+              src="images/6.jpg"
+              alt="6"
+              id="memoryTile"
+              onclick="tile(12, arr)"
+            />
+          </div>
+          <div id="tileRow">
+            <img
+              src="images/7.jpg"
+              alt="7"
+              id="memoryTile"
+              onclick="tile(13, arr)"
+            />
+            <img
+              src="images/7.jpg"
+              alt="7"
+              id="memoryTile"
+              onclick="tile(14, arr)"
+            />
+            <img
+              src="images/8.jpg"
+              alt="8"
+              id="memoryTile"
+              onclick="tile(15, arr)"
+            />
+            <img
+              src="images/8.jpg"
+              alt="8"
+              id="memoryTile"
+              onclick="tile(16, arr)"
+            />
+          </div>
+        </div>
+        <div id="win">
+          WYGRAŁEŚ
+          <button id="winButton" onclick="reversedToggle()">ZAKOŃCZ</button>
+        </div>
+        <div id="lost">
+          PRZEGRAŁEŚ
+          <button id="lostButton" onclick="reversedToggle()">ZAKOŃCZ</button>
+        </div>
+      </div>
+      <div id="rightPanel">
+        <div id="scoreTable">
+          <p id="scoreParagraph">REKORDY 30S</p>
+          <div id="thirty"></div>
+          <p id="scoreParagraph">REKORDY 60S</p>
+          <div id="sixty"></div>
+          <p id="scoreParagraph">REKORDY 90S</p>
+          <div id="ninety"></div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
