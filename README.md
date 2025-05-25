@@ -12,9 +12,9 @@ This repository contains a browser-based **Memory Matching game** developed as p
 
 ## 🛠️ Technologies Used
 
-- **JavaScript** (68.4%)  
-- **CSS** (27.1%)  
-- **HTML** (4.5%)
+- **JavaScript** (48.5%)
+- **HTML** (32.1%)
+- **CSS** (19.4%)  
 
 ## 🚀 How to Run
 
